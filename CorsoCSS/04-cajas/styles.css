@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#box1,#box2{
+    width: 250px;
+    height: 250px;
+    background-color: lawngreen;
+    border: 10px solid violet;
+    margin: 15px 15px 15px 15px;
+    padding: 20px;
+}
+p{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open sans';
+    font-size: 20px;
+    /*250 height - 20 size = 230 px + 5 px*/
+    line-height: 235px;
+}
