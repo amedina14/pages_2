@@ -1,0 +1,42 @@
+body{
+    background-color: gainsboro;
+    background-image: url(img/pattern1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: left bottom;
+    color: black;
+    text-align: justify;
+    line-height: 20px;
+    text-indent: inherit;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+#cajah1{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(200, 202, 211);
+    color: white;
+    background-image: url(img/space-stars.jpg);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    background-image: url(img/pattern3.jpg);
+    background-attachment: fixed;
+    padding: 10px;
+    width: max-content;
+    text-align: center;
+}
+
+#caja_p1{
+    background-image: url(img/space-stars.jpg);
+    background-attachment: fixed;
+    color: gold;
+    padding: 15px;
+    text-align: center;
+
+}
