@@ -6,19 +6,30 @@
     <title>Scatole CSS</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
-<h1>Scatole in CSS</h1>
 
 <body>
+    <h1>Scatole in CSS</h1>
 
-    <div id="box1">
-        <p>Scatola con contenuto 1</p>
-    </div>
-
-    <section id="box2">
-        <p>Scatola con contenuto 2</p>
+    <!-- Elementi flotanti -->
+    <section id="container">
+        <div class="boxes">
+            <p>Scatola con contenuto 1</p>
+        </div>
+        <div class="boxes">
+            <p>Scatola con contenuto 2</p>
+        </div>
     </section>
 
-    <footer>arandom &copy; 2020</footer>
-</body>
+    <!-- Resetta i flotanti -->
+    <div class="clearfix"></div>
 
+    <!-- Elementi non flotanti al di sotto -->
+    <h2>Contenuto dopo le scatole posizonate</h2>
+    <p>Testo di prova</p>
+
+    <footer>
+        <hr />
+        arandom &copy; 2020
+    </footer>
+</body>
 </html>
