@@ -1,0 +1,77 @@
+/*
+Ejsercizio completo con css
+1- Craere doc html e vincolarlo con css
+2- Creare una struttura html che abbia 
+un container generale, header, menu, 
+side bar,
+sezione di contenuto principale, elementi
+dentro del container principale e footer.
+3- Tutto il contenuto dev'essere dentro al
+container generale di ampiezza 1200px 
+e centrale.
+4- Header deve occupare il 100% 
+di ampiezza ed avere un testo grande 
+centrale.
+5- Menu contiene elementi uno a fianco 
+dell'altro.
+6- Il contenuto principale dev'essere 
+ampio 70%.
+7- Il contenuto dentro del container 
+principale dev'essere una quadro con 4 
+linee di 2 boxes.
+8- La barra laterale deve avere 
+un'ampiezza del 30%
+9- Il footer deve avere un'ampiezza del 
+100% del div che lo contiene ed essere
+al di sotto di tutto.
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: darkgrey;
+}
+.header{
+    width: 100%;
+}
+.nav_global{
+    display: flexbox;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+.nav_links{
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-left: 15px;
+    word-spacing: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+}
+#home{
+    margin-left: 50px;
+}
+body{
+    background-color: white
+}
+.section_title{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+.footer{
+    width: 100%;
+}
