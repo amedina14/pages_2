@@ -3,7 +3,17 @@
     padding: 0px;
 }
 body{
+    margin: 20px;
     padding: 40px;
+    border: 1px black solid;
+}
+#container{
+    display: flexbox;
+    max-width: 1020px;
+    border: lightcoral 5px solid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 .boxes{
     display: block;
@@ -26,10 +36,17 @@ body{
     /*250 height - 20 size = 230 px + 5 px*/
     line-height: 235px;
 }
-
 .clearfix{
     float: none;
     clear: both;
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p2{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 footer{
     margin-top: 20px;
