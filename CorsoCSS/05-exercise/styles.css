@@ -85,16 +85,25 @@ al di sotto di tutto.
     float: left;
 
 }
+#lateral .box > h2{
+    text-align: center;
+    margin: 10px 0px;
+    padding: 5px;
+    border-bottom: 1px grey solid;
+}
+#lateral > p{
+    padding: 15px;
+}
 #lateral{
     float: left;
     width: 30%;
     background-color: lightsteelblue;
-    border: 1px solid;
+    border: px solid;
     /*min-height: 1209px;*/
     min-height: 500px;
     max-height: 1209px;
     text-align: center;
-    overflow: scroll;
+    overflow-y: scroll;
     text-align: justify;
 }
 #contenuto > h2{
@@ -105,6 +114,7 @@ al di sotto di tutto.
     text-shadow: 260px -10px 3px white;
 }
 #contenuto .box{
+    position: relative;
     width: 40%;
     height: 250px;
     /* o margin 5% */
@@ -125,7 +135,7 @@ al di sotto di tutto.
     box-shadow: 0px 0px 15px indigo inset !important;    
 }
 #contenuto .box2-border{
-    border-radius: 200px 200px 100% 200px;
+    border-radius: 200px 200px 200px 200px;
 }
 #contenuto .box3-color:hover{
     background-color: lightcoral;
@@ -141,4 +151,33 @@ al di sotto di tutto.
     line-height: 55px;
     text-align: center;
     color: black;
+}
+.libre1{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 52%;
+    background-color: rgb(20, 90, 220);
+    font-size: 15px;
+    text-align: justify;
+    z-index: 10;
+}
+.libre2{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 25px;
+    font-size: 15px;
+    background-color: rgb(128, 214, 240);
+    text-align: justify;
+    z-index: 11;
+}
+.fixed-box{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    bottom: 0px;
+    background-color: lightseagreen;
 }
