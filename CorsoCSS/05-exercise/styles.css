@@ -98,15 +98,38 @@ al di sotto di tutto.
     border-bottom: 1px solid #ccc;
     padding: 10px;
     color: whitesmoke;
+    text-shadow: 260px -10px 3px white;
 }
 #contenuto .box{
     width: 40%;
     height: 250px;
     /* o margin 5% */
     margin: 20px 42px;
-    background-color: limegreen;
+    background-color: lightgrey;
     border: 5px solid lightcoral;
     float: left;
+    text-align: center;
+    line-height: 230px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px aqua;
+}
+#contenuto .box:hover{
+    background-color: palegreen;
+    color: cornflowerblue;
+}
+#contenuto .box2-sombra-interior{
+    box-shadow: 0px 0px 15px indigo inset !important;    
+}
+#contenuto .box2-border{
+    border-radius: 200px 200px 100% 200px;
+}
+#contenuto .box3-color:hover{
+    background-color: lightcoral;
+    color: yellow;
+}
+#contenuto .box5-color{
+    box-shadow: 0px 0px 15px yellow;
+    border-radius: 50% 0% 0% 50%;
 }
 .footer{
     width: 100%;
