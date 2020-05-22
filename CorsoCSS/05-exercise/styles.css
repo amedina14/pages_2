@@ -89,9 +89,13 @@ al di sotto di tutto.
     float: left;
     width: 30%;
     background-color: lightsteelblue;
-    border: 0px solid;
-    min-height: 1209px;
+    border: 1px solid;
+    /*min-height: 1209px;*/
+    min-height: 500px;
+    max-height: 1209px;
     text-align: center;
+    overflow: scroll;
+    text-align: justify;
 }
 #contenuto > h2{
     text-align: center;
