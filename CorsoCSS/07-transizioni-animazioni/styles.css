@@ -64,6 +64,7 @@ body{
         background-color: cyan;
         transform: rotate(3510deg);
         border-radius: 100%;
+        border: 10px dashed springgreen;
     }
     100%{
         margin-left: 0%;
