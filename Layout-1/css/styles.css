@@ -1,0 +1,97 @@
+/* Fonts */
+@font-face{
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: 
+    url("fonts/nevis.eot?iefix") format("embedded-opentype"),
+    url("fonts/nevis.svg") format("svg"),
+    url("fonts/nevis.ttf") format("truetype"),
+    url("fonts/nevis.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+/* General styles */
+*{
+    margin: 0%;
+    padding: 0%;
+    /* tot height 766px*/
+    /* tot width 1350px*/
+}
+body{
+    background-image: url("../img/paven.png");
+}
+/* Header */
+#header{
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+#header a{
+    text-decoration: none;    
+}
+#header #logotype{
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+#header #logotype img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    /* Asse x, -(y) & blurred */
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+#header h1:hover{
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #71B053;    
+}
+#header h1 a{
+    color: #71B053;
+}
+/* NavBar */
+#nav{
+    background-color: #333333;
+    min-width: 250px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1130px;
+}
+#nav > ul > li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+}
+#nav > ul > li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+#nav > ul > li:first-child{
+    border-left: 1px solid gray;
+}
+#nav > ul > li:hover a{
+    background-color: #71B053;
+    box-shadow: 0px 0px 4px green inset;
+    transition: all 300ms;
+}
