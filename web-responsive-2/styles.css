@@ -22,7 +22,7 @@ header{
 }
 aside{
     width: 20%;
-    min-height: 400px;
+    min-height: auto;
     float: left;
     background: #cccccc;
     text-align: center;
@@ -47,18 +47,161 @@ aside{
 }
 /* Responsive*/
 
-/* Da 0px al 980px (limite per me) di ampiezza di schermo */
+/* Da 0px al 980px (limite per chrome) di ampiezza di schermo */
 @media (max-width: 980px){
     /* si eseguiranno questi stili */
     #articles article{
         width: 40%;
         background: crimson;
     }
+    aside{
+        height: auto;
+        line-height: 552px;
+    }
 }
 @media (max-width: 632px){
     /* Se eseguono questi stili */
-    #articles article{
+    #article{
+        width: 80%;
+    }
+    #articles > article{
         width: 90%;
         background-color: teal;
+        margin-left: 4%;
+        margin-right: 5%;
+        line-height: 150px;
+    }
+    #content > aside{
+        height: 1104px;
+        line-height: 552px;
+    }
+}
+@media (max-width: 554px){
+    body{
+        background: tan;
+    }
+}
+@media (max-width: 312px){
+    #container{
+        overflow: hidden;
+    }
+    #container > #content > aside{
+        float: none;
+        height: 50px;
+        width: 100%;
+        padding: 0px;
+    }
+    aside > h2{
+        line-height: 50px;
+    }
+    #articles{
+        width: 100%;
+    }
+}
+@media (max-width:306px){
+    header{
+        line-height: 75px;
+    }
+}
+@media (max-width: 209px){
+    header > h1{
+        height: 150px;
+        font-size: 25px;
+        line-height: 75px;
+    }
+    #articles > article{
+        font-size: 15px;
+    }
+}
+@media (max-width: 166px){
+    header{
+        height: 150px;
+        background-color: violet;
+    }
+    header > h1{
+        font-size: 20px;
+        line-height: 75px;
+    }
+}
+@media (max-width: 155px){
+    #articles > article h2{
+        font-size: 15px;
+        line-height: 150px;
+    }
+}
+@media (max-width: 132px){
+    header{
+        height: 75px;
+        background-color: yellow;
+        line-height: 37.5px;
+    }
+    header > h1{
+        height: 75px;
+        font-size: 15px;
+        line-height: 37.5px;
+        margin: 0px auto;
+    }
+}
+@media (max-width: 120px){
+    aside > h2{
+        font-size: 15px;
+    }
+}
+@media (max-width: 99px){
+    header{
+        height: 75px;
+        background-color: springgreen;
+        line-height: 37.5px;
+    }
+    header > h1{
+        height: 75px;
+        font-size: 10px;
+        line-height: 37.5px;
+        margin: 0px auto;
+    }
+    #articles > article h2{
+        font-size: 10px;
+        line-height: 150px;
+    }
+}
+@media (max-width: 75px){
+    aside > h2{
+        font-size: 10px;
+    }
+}@media (max-width: 72px){
+    header{
+        height: 75px;
+        background-color: palegreen;
+        line-height: 37.5px;
+    }
+    header > h1{
+        height: 75px;
+        font-size: 8px;
+        line-height: 37.5px;
+        margin: 0px auto;
+    }
+    #articles > article h2{
+        font-size: 8px;
+        line-height: 150px;
+    }
+}   
+@media (max-width: 52px){
+    header{
+        height: 75px;
+        background-color: yellowgreen;
+        line-height: 37.5px;
+    }
+    header > h1{
+        height: 75px;
+        font-size: 7px;
+        line-height: 37.5px;
+        margin: 0px auto;
+    }
+    #articles > article h2{
+        font-size: 7px;
+        line-height: 150px;
+    }
+    aside > h2{
+        font-size: 8px;
     }
 }
