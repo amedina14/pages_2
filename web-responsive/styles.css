@@ -50,7 +50,10 @@ aside{
     margin-right: 15%;
     float: left;
 }
-@media (max-width: 632px){
+
+/* Media Queries */
+
+@media (max-width: 635px){
     aside{
         line-height: 150px;
     }
@@ -59,7 +62,132 @@ aside{
         padding-bottom: auto;
         word-spacing: 5px;
     }
-    footer{
-
+    #articles > .spacing > article{
+        width: 30%;
+        height: 150px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 150px;
+        text-align: center;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        float: left;
     }
 }
+@media (min-width: 636px){
+    aside{
+        line-height: 400px;
+    }
+    aside > h2{
+        padding-top: 0px;
+        padding-bottom: auto;
+    }
+    #articles > .spacing > article{
+        width: 20%;
+        height: 80px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 80px;
+        text-align: center;
+        margin: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        float: left;
+    }
+}
+/* Articles Boxes */
+@media (max-width: 785px){
+    #articles > .spacing > article{
+        width: 30%;
+        height: 150px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 150px;
+        text-align: center;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        float: left;
+    }
+
+    article > h2{
+        padding: 0px 0px;
+    }
+}
+
+/* Screen over totpx */
+
+@media (min-width: 786px){
+    #articles > .spacing > article{
+        width: 20%;
+        height: 150px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 150px;
+        text-align: center;
+        margin: 2.5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        float: left;
+    }
+    article > h2{
+        padding: 0px 0px;
+    }
+}
+
+@media (min-width: 1564px){
+    #articles > .spacing > article{
+        width: 20%;
+        height: 120px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 120px;
+        text-align: center;
+        margin: 2.5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        float: left;
+    }
+}
+
+@media (min-width: 2509px){
+    #articles > .spacing > article{
+        width: 25%;
+        height: 120px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 120px;
+        text-align: center;
+        margin: 2%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        float: left;
+    }
+}
+/* Screen under 494px */
+@media (max-width: 494px){
+    #articles > .spacing > article{
+        line-height: 75px;
+    }
+}
+/*
+@media (max-width: 494px){
+    #articles > .spacing > article{
+        width: 30%;
+        height: 150px;
+        color: white;
+        background-color: sandybrown;
+        line-height: 150px;
+        text-align: center;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        float: left;
+    }
+    article > h2{
+        padding: 0px 0px;
+        font-size: 20px;
+    }
+}
+*/
