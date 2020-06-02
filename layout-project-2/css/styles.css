@@ -171,3 +171,50 @@ body{
     color: #00538c;
     font-size: 15px;
 }
+
+/* Sidebar */
+#lateral{
+    display: block;
+    float: right;
+    width: 300px;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+}
+aside h3{
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 49px;
+    background: 
+    url("../img/pxgray.png"),
+    white;
+    box-shadow: 
+    1px 1px 0px #393d3f,
+    2px 2px 0px #393d3f,
+    3px 3px 0px #393d3f,
+    4px 4px 0px #393d3f,
+    5px 5px 0px #393d3f;
+    font-size: 30px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /*
+    0px 1px 0px black,
+    1px 2px 0px black,
+    2px 3px 0px black,
+    3px 4px 0px black,
+    4px 5px 0px black;    
+    */
+}
+#lateral .login{
+    display: block;
+    float: left;    
+}
+.sponsors{
+    width: 250px;
+    height: 250px;
+    background: white;
+}
