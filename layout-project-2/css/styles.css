@@ -586,7 +586,31 @@ aside h3{
     margin-top: 60px;
     text-align: center;
     line-height: 100px;
-
+    transition: all 1s;
+}
+#blog:hover{
+    background-color: black;
+    border: 10px solid #37bcf9;
+    border-radius: 240px;
+    box-shadow: 0px 0px 10px gray;
+    animation: blink 10s infinite linear;
+}
+@keyframes blink{
+    0%{
+        border: 10px solid #37bcf9;
+    }
+    25%{
+        border: 10px solid green;
+    }
+    50%{
+        border: 10px solid yellow;
+    }
+    75%{
+        border: 10px solid red;
+    }
+    100%{
+        border: 10px solid #37bcf9;
+    }
 }
 #blog a{
     display: block;
@@ -595,6 +619,18 @@ aside h3{
     font-size: 40px;
     letter-spacing: 3px;
     color: #00538c;
+    transition: all 1s;
+}
+
+#blog:hover a{
+    color: white;
+    text-shadow: 
+    1px 1px 1px #555,
+    1px 2px 1px #555,
+    1px 3px 1px #555,
+    1px 4px 1px #555,
+    1px 5px 1px #555,
+    1px 6px 1px #555;
 }
 
 /* Footer */
@@ -645,6 +681,12 @@ aside h3{
 #menu_footer ul li a{
     display: block;
     height: 40px;
+    transition: all 300ms;
+}
+#menu_footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
 }
 #location iframe{
     width: 100%;
