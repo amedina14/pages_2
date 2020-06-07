@@ -178,3 +178,55 @@
         width: 70%;
     }
 }
+@media (max-width: 700px){
+    #lateral{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+        margin-top: 20px;
+    }
+    #search input[type="text"]{
+        width: 80%;
+    }
+    #search input[type="button"]{
+        width: 16.5%;
+        margin: 0px auto;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #articles{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+    }
+}
+@media (max-width: 563px){
+    .card{
+        width: 16%;
+        margin: 1.8%;
+    }
+}
+@media (max-width: 522px){
+    #search input[type="text"]{
+        width: 88%;
+    }
+    #search input[type="button"] {
+        width: 7.5%;
+        margin: 0px auto;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 466px){
+    #banner h1{
+        width: 95%;
+        margin: 14px auto;
+    }
+}
+@media (max-width: 446px){
+    #banner h1{
+        margin: 14px auto;
+    }
+}
