@@ -1,3 +1,8 @@
+@media (min-width: 1251px){
+    #articles #blog{
+        width: 90%;
+    }
+}
 @media (max-width: 1250px){
     .wrap{
         width: 90%;
@@ -23,6 +28,9 @@
     }
     #articles article{
         width: 97%;
+    }
+    #articles #blog{
+        width: 90%;
     }
     #footer .wrap > div{
         width: 25%;
@@ -61,11 +69,11 @@
         width: 26%;
         margin: 3%;
     }
-    #footer img{
-        max-width: 100%;
-    }
     #footer h5{
         font-size: 22px;
+    }
+    #footer img{
+        max-width: 100%;
     }
 }
 @media (max-width: 925px){
@@ -132,7 +140,7 @@
 @media (max-width: 799px){
     #banner h1{
         font-size: 30px;
-        margin: 32px auto;
+        margin: 36px auto;
     }
     .card{
         height: auto;
@@ -201,11 +209,35 @@
         margin: 0px auto;
         min-height: auto;
     }
+    #footer{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    #footer #menu_footer{
+        height: 340px;
+    }
+    #footer .wrap > div{
+        width: 100%;
+        margin: 0% auto;
+        margin-top: 30px;
+    }
+    #footer h5{
+        font-size: 25px;
+    }
 }
 @media (max-width: 563px){
     .card{
         width: 16%;
         margin: 1.8%;
+    }
+    .card .icon{
+        font-size: 40px;
+    }
+    .card .category{
+        font-size: 13px;
+    }
+    .card:hover .icon{
+        font-size: 40px;
     }
 }
 @media (max-width: 522px){
@@ -218,15 +250,78 @@
         padding-right: 0px;
         padding-left: 0px;
     }
+    #lateral h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #articles .data span{
+        font-size: 11px;
+        line-height: 25px;
+    }
 }
-@media (max-width: 466px){
+@media(max-width: 475px){
+    #banner{
+        height: 85px;
+    }
     #banner h1{
-        width: 95%;
-        margin: 14px auto;
+        font-size: 18px;
+        margin: 0px auto;
+        line-height: 85px;
+    }
+    #header {
+        height: auto;
+    }
+    #logo{
+        float: left;
+    }
+    #menu {
+        clear: both;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #menu ul li{
+        width: 100%;
+        text-align: left;
+        margin: 0px auto;
+        line-height: 40px;
+        height: 40px;
+    }
+    #menu ul li a:hover {
+        color: #37bcf9;
+        transform: translateX(5%);
+
+    }
+    #articles .data{
+        float: none;
+        border-radius: 0px;
+        margin: -10px;
+    }
+    #articles .data span{
+        font-size: 13px;
+    }
+    #articles article h4 {
+        margin-top: 20px;
     }
 }
 @media (max-width: 446px){
-    #banner h1{
-        margin: 14px auto;
+    #articles article h4 a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 414px){
+    .card .icon {
+        font-size: 35px;
+        height: 110px;
+        line-height: 80px;
+    }
+    .card:hover .icon{
+        font-size: 35px;
+    }
+    .card .category {
+        font-size: 12px;
     }
 }
