@@ -56,10 +56,28 @@
         float: none;
     }
     #nav #myLinks ul li:hover a{
-        color: green;
+        color: #71B053;
         display: block;
         font-size: 20px;
         transform: translateX(3%);
+    }
+    #myLinks ul li ul{
+        display: none;
+    }
+    #myLinks ul li:hover ul{
+        display: block;
+    }
+    #myLinks > ul > li > ul > li:hover{
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 6px #dddddd inset;
+        transition: all 5ms;
+        text-align: center;
+    }
+    #nav #myLinks ul li:hover ul li a{
+        color: white;
+    }
+    #nav #myLinks ul li ul li:hover a{
+        color: #71B053;
     }
     #nav li a{
         margin: 20px auto;
