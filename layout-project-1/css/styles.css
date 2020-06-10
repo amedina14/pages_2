@@ -172,29 +172,6 @@ button:active{
     box-shadow: 0px 0px 4px green inset;
     transition: all 300ms;
 }
-#nav{
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-#nav ul {
-    list-style: none;
-    display: none;
-}
-#nav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-#nav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -4%;
-}
 
 /* Dropdown list */
 #nav > ul > li > ul{
