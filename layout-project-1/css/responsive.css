@@ -1,10 +1,12 @@
 @media (min-width: 700px){
-    #nav a{
+    #nav a.icon{
         display: none;
     }
 }
 @media (max-width: 960px){
     /* mod the navbar for tablet */
+}
+@media (max-width: 1280px){
 }
 @media (max-width: 415px){
     #header{
@@ -55,33 +57,55 @@
     #nav ul li{
         float: none;
     }
+    #nav #myLinks > ul > li:hover{
+        background-color: transparent;
+        box-shadow: none;    
+    }
     #nav #myLinks ul li:hover a{
         color: #71B053;
         display: block;
         font-size: 20px;
         transform: translateX(3%);
     }
-    #myLinks ul li ul{
+    /* Far apparire il sub dropdwon list con la sua 
+    propria area nella nav.
+    togliendo #mylinks en ln. 177 se cumple.*/
+    #nav #myLinks ul li ul{
         display: none;
     }
-    #myLinks ul li:hover ul{
-        display: block;
+    #myLinks ul li{
+        border-right: 0px;
     }
-    #myLinks > ul > li > ul > li:hover{
+    #myLinks ul li:first-child{
+        border-left: 0px;
+    }
+    #nav #myLinks > ul > li:hover ul{
+        display: block;
+        position: relative;
+        width: auto;
+        margin: 0px auto;
+        margin-left: 20%;
+        box-shadow: none;
+    }
+    #nav #myLinks > ul > li > ul > li:hover{
         background-color: whitesmoke;
         box-shadow: 0px 0px 6px #dddddd inset;
         transition: all 500ms;
         text-align: center;
     }
+    #nav #myLinks ul li:hover ul li{
+        padding: 0px;
+        border: none;
+    }
     #nav #myLinks ul li:hover ul li a{
-        color: white;
+        color: white; /* color senza hover al text del sub dropdwon list*/
         font-size: 15px;
         border-bottom: 0px;
     }
     #nav #myLinks ul li ul li:hover a{
-        color: #71B053;
+        color: #71B053; /* Sub Dropdown list color text con hover */
     }
-    #nav li a{
+    #nav #myLinks > ul > li a{
         margin: 10px auto;
         height: 40px;
         line-height: 40px;
@@ -89,8 +113,9 @@
         border-bottom: 1px solid gray; /* Bordo basso su ogni link del menu*/
     }
     #nav > #myLinks > ul > li:first-child > a{
-        border-top: 1px solid gray; /* Bordo basso su ogni link del menu*/
+        border-top: 1px solid gray; /* Bordo alto sul primo link del menu*/
     }
+    /*button hamburguer*/
     #nav a {
         color: white;
         padding: 14px 16px;
