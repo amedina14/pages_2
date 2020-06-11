@@ -103,8 +103,12 @@ body{
     #sidebarLeft{
         font-size: 7px;
     }
+    #links{
+        margin: 0% 17.5%;
+        margin-top: 5%;
+    }
     #sidebarRight{
-        top: -244px;
+        top: 5%;
         font-size: 7px;
     }
 }
