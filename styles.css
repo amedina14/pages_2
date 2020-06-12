@@ -25,7 +25,7 @@ body{
     width: 96%;
     min-height: 400px;
     margin: 0px 2%;
-    position: absolute;
+    position: relative;
     background-color: whitesmoke;
     overflow: hidden;
 }
@@ -98,6 +98,12 @@ body{
     text-decoration: underline;
     color: springgreen;
 }
+#footer{
+    display: block;
+    width: 96%;
+    height: auto;
+    margin: 0px auto;
+}
 
 @media (max-width: 414px){
     #sidebarLeft{
@@ -110,5 +116,8 @@ body{
     #sidebarRight{
         top: 5%;
         font-size: 7px;
+    }
+    #footer p{
+        font-size: 10px;
     }
 }
