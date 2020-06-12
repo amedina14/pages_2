@@ -104,6 +104,9 @@ body{
     height: auto;
     margin: 0px auto;
 }
+#footer p{
+    font-size: 10px;
+}
 
 @media (max-width: 414px){
     #sidebarLeft{
