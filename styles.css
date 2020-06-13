@@ -20,10 +20,10 @@ body{
     color: white;
 }
 
-/* Contenuto Sinistro dei links */
+/* Contenitore dei links */
 #container{
     width: 96%;
-    min-height: 400px;
+    min-height: 500px;
     margin: 0px 2%;
     position: relative;
     background-color: whitesmoke;
@@ -49,6 +49,24 @@ body{
     text-align: justify;
 }
 
+/* Contenuto del testo */
+#container #text-one{
+    width: 60%;
+    height: 100px;
+    text-align: justify;
+    margin: 0px auto;
+    padding: 10px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#container #text-one > h2{
+    text-align: left;
+}
+#container #text-one > p{
+    line-height: normal;
+    margin-top: 2%;
+}
+
 /* Contenuto Destro dei links */
 #sidebarRight{
     display: block;
@@ -72,11 +90,11 @@ body{
 #links{
     display: inline-block;
     position: relative;
-    width: 60%;
+    width: 57%;
     margin: 0% 19.2%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 0%;
-    padding: 10px;
+    padding: 30px;
     background-color: white;
 }
 #links > ul {
