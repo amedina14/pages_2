@@ -1,0 +1,67 @@
+//variables
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra: rgb(63, 208, 252);
+$color-secundario: rgb(15, 139, 255);
+
+//uso de variables
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    font-family: $fuente-tipica;
+    color: $color-letra;
+}
+p{
+    color: $color-secundario;
+}
+
+//Anidacion
+.box{
+    border: 1px solid blueviolet;
+    width: 300px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: burlywood;
+    padding: 10px;
+    h3{
+        color: teal;
+    }
+    p{
+        color: yellow;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .info{
+        font-size: 10px;
+        .author{
+            font-size: 15px;
+            color: darkslategrey;
+        }
+    }
+}
+
+//Mixin / funciones
+@mixin crearBordes($color, $size, $shadow){
+    border: 5px solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px 5px $shadow;
+}
+
+.box{
+    @include crearBordes(rgb(183, 0, 255), 10px, black);
+}
+.listado{
+    @include crearBordes(green, 5px, red);
+}
+
+// Herencia
+%alert-normal{
+    border: 1px solid gray;
+    background: #ccc;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
