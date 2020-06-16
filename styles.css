@@ -131,8 +131,11 @@ body{
         font-size: 7px;
     }
     #links{
-        margin: 0% 17.5%;
-        margin-top: 5%;
+        margin: 0% auto;
+        margin-top: 10%;
+        padding: 3%;
+        width: 60%;
+        margin-left: 17%;
     }
     #sidebarRight{
         top: 5%;
