@@ -60,8 +60,29 @@ p{
 // Herencia
 %alert-normal{
     border: 1px solid gray;
-    background: #ccc;
+    background: slategrey;
     color: white;
     padding: 10px;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-color: rgb(100, 162, 255)
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color: rgb(255, 38, 0);
+    background-color: rgb(255, 145, 145);
+    border-color: red;
+}
+
+.alert-success{
+    @extend %alert-normal;
+    color: green;
+    background-color: rgb(145, 255, 145);
+    border-color: green;
 }
