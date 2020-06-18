@@ -11,6 +11,11 @@ p {
   color: #0f8bff;
 }
 
+.clearfix {
+  clear: both;
+  float: none;
+}
+
 .box {
   border: 1px solid blueviolet;
   width: 300px;
@@ -69,6 +74,21 @@ p {
   color: green;
   background-color: #91ff91;
   border-color: green;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.boxes {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.box {
+  float: left;
+  width: 22.2222222222%;
+  margin: 10px;
 }
 
 h1 {

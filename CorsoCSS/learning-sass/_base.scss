@@ -16,6 +16,10 @@ h1{
 p{
     color: $color-secundario;
 }
+.clearfix{
+    clear: both;
+    float: none;
+}
 
 //Anidacion
 .box{
@@ -85,4 +89,22 @@ p{
     color: green;
     background-color: rgb(145, 255, 145);
     border-color: green;
+}
+
+// Operadores
+h1{
+    font-size: 20px + 5px - 1px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.boxes{
+    width: $wrap;
+    margin: 0px auto;
+}
+.box{
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
 }
