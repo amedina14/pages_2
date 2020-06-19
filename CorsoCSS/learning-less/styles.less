@@ -10,3 +10,25 @@
 h1{
     font-family: @fuente;
 }
+
+// Animations
+.info{
+    ul{
+        a{
+            color: white;
+            font-size: 18px;
+        }
+    }
+}
+
+// Mixins
+@size-boxShadow: 10px;
+@size-textShadow: 5px;
+.sombras(@size-boxShadow, @size-textShadow){
+    box-shadow: 0px 0px @size-boxShadow  black;
+    text-shadow: 0px 0px @size-textShadow rgb(43, 197, 38);
+}
+
+.info{
+    .sombras(@size-boxShadow, @size-textShadow);
+}
