@@ -32,3 +32,29 @@ h1{
 .info{
     .sombras(@size-boxShadow, @size-textShadow);
 }
+
+// Operatori
+h1{
+    font-size: 30px + 7px;
+}
+
+// Mixins conditionals
+.textoNegro (@value) when (@value = true){
+    color: black;
+}
+
+h1{
+    color: chocolate;
+    .textoNegro(true);
+}
+
+// Bucles
+.loop (@cont) when (@cont > 0){
+    .loop((@cont - 1));
+    height: (900px / @cont);
+}
+
+.info{
+    height: 900px;
+    .loop(5);
+}
