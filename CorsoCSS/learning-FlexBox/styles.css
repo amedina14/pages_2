@@ -36,15 +36,20 @@ body{
     background: gray;
 }
 
+/*Ordena elementi contenuti*/
 .caja.red{
+    order: 1;
     background: red;
 }
 .caja.green{
+    order: 2;
     background: green;
 }
 .caja.blue{
+    order: 3;
     background: blue;
 }
 .caja.orange{
+    order: 4;
     background: orange;
 }
