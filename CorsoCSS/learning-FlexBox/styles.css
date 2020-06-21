@@ -22,18 +22,28 @@ body{
     flex-wrap: wrap;
     */
     flex-flow: row wrap;
+    /*
+    justify-content: space-between;    
+    justify-content: space-evenly;
+    */
+    justify-content: space-around;
+
+    height: 600px;
+    align-items: flex-start;
     border: 3px solid black;
     padding: 5px;
 }
 
 .caja{
     /*Da la stessa scala a tutti gli elenti, responsivo*/
-    /*
-    flex-grow: 1;
-    */
+
+    flex-grow: 1;    
+
     /*flex basis stabilisce misura base*/
     /*flex-basis: 25%;*/
+    /*
     flex-basis: calc((100% / 3) - 68px);
+    */
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -50,10 +60,12 @@ body{
     /*
     flex-grow: 5;
     */
+    align-self: flex-start;
     background: var(--rojo);
 }
 .caja.green{
     /*order: 2;*/
+    align-self: center;
     background: green;
 }
 .caja.blue{
@@ -62,6 +74,7 @@ body{
     flex-grow: 0;
     flex-shrink: 0;
     */
+    align-self: center;
     background: blue;
 }
 .caja.orange{
@@ -69,6 +82,9 @@ body{
     /*
     flex-grow: 5;
     */
+    /*
     flex-basis: 100%;
+    */
+    align-self: flex-end;
     background: orange;
 }
