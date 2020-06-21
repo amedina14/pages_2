@@ -26,6 +26,7 @@ body{
 }
 
 .caja{
+    flex-grow: 1; /*Da la stessa scala a tutti gli elenti, responsivo*/
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -38,18 +39,20 @@ body{
 
 /*Ordena elementi contenuti*/
 .caja.red{
-    order: 1;
+    /*order: 1;*/
+    flex-grow: 5;
     background: red;
 }
 .caja.green{
-    order: 2;
+    /*order: 2;*/
     background: green;
 }
 .caja.blue{
-    order: 3;
+    /*order: 3;*/
     background: blue;
 }
 .caja.orange{
-    order: 4;
+    /*order: 4;*/
+    flex-grow: 5;
     background: orange;
 }
