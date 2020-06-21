@@ -1,4 +1,5 @@
 body{
+    --rojo: red;
     background: skyblue;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -26,7 +27,13 @@ body{
 }
 
 .caja{
-    flex-grow: 1; /*Da la stessa scala a tutti gli elenti, responsivo*/
+    /*Da la stessa scala a tutti gli elenti, responsivo*/
+    /*
+    flex-grow: 1;
+    */
+    /*flex basis stabilisce misura base*/
+    /*flex-basis: 25%;*/
+    flex-basis: calc((100% / 3) - 68px);
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -40,8 +47,10 @@ body{
 /*Ordena elementi contenuti*/
 .caja.red{
     /*order: 1;*/
+    /*
     flex-grow: 5;
-    background: red;
+    */
+    background: var(--rojo);
 }
 .caja.green{
     /*order: 2;*/
@@ -49,10 +58,17 @@ body{
 }
 .caja.blue{
     /*order: 3;*/
+    /*
+    flex-grow: 0;
+    flex-shrink: 0;
+    */
     background: blue;
 }
 .caja.orange{
     /*order: 4;*/
+    /*
     flex-grow: 5;
+    */
+    flex-basis: 100%;
     background: orange;
 }
