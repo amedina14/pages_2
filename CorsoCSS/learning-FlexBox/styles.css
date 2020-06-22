@@ -35,7 +35,7 @@ body{
 }
 
 .caja{
-    /*Da la stessa scala a tutti gli elenti, responsivo*/
+    /*Dà la stessa scala a tutti gli elementi, responsivo*/
 
     flex-grow: 1;    
 
