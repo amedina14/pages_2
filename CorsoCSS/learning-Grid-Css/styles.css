@@ -16,10 +16,10 @@ body{
     grid-gap: 10px;
 
     /*Definir columnas el grid layout
-        1fr 1fr 1fr 1fr
-        repeat(4, 1fr)
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, calc(25% - 10px)) calc(25%);
     */
-    grid-template-columns: repeat(3, calc(25% - 10px)) calc(25%);
+    grid-template-columns: repeat(2, 1fr);
 
     padding: 10px;
     border: 1px solid orangered;
