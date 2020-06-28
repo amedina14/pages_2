@@ -4,7 +4,7 @@ body{
 }
 
 .layout{
-    width: 1200px;
+    width: 80%;
     min-height: 400px;
     margin: 0px auto;
 
@@ -69,4 +69,28 @@ body{
     */
     grid-column: 2 / 4;
     background-color: mediumturquoise;
+}
+
+@media (max-width: 438px){
+    .layout{
+        width: 90%;
+    }
+}
+@media (max-width: 390px){
+    .caja.red{
+        /*
+        width: 79%;
+        */
+    }
+    .caja.blue{
+        /*width: 66%;*/
+    }
+    .caja.pink {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+    .caja.orange {
+        grid-row: 4 / 5;
+        grid-column: 2 / 4;
+    }
 }
