@@ -3,6 +3,47 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*------------EJERCICIO COMPLETO-----------*/
+
+#website{
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    background-color: royalblue;
+    color: white;
+}
+
+#menu{
+    background: skyblue;
+    color: black;
+}
+
+#contenido{
+    background: #eee;
+}
+
+#contenido article{
+    background: #ccc;
+    border: 1px solid slateblue;
+}
+
+#lateral{
+    background-color: orange;
+    color: white;
+}
+
+#footer{
+    background: black;
+    color: white;
+}
+
+/*-----------EJEMPLOS----------------------*/
+
+
 .layout{
     width: 80%;
     min-height: 400px;
