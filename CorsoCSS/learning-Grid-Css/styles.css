@@ -6,6 +6,9 @@ body{
 /*------------EJERCICIO COMPLETO-----------*/
 
 #website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
     width: 75%;
     height: 100vh;
     margin: 0px auto;
@@ -15,30 +18,41 @@ body{
 #cabecera{
     background-color: royalblue;
     color: white;
+    grid-column: 1 / 6;
 }
 
 #menu{
     background: skyblue;
     color: black;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
 }
 
 #contenido{
     background: #eee;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
 }
 
 #contenido article{
     background: #ccc;
     border: 1px solid slateblue;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
 }
 
 #lateral{
     background-color: orange;
     color: white;
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
 }
 
 #footer{
     background: black;
     color: white;
+    grid-row: 4 / 5;
+    grid-column: 1 / 6;
 }
 
 /*-----------EJEMPLOS----------------------*/
