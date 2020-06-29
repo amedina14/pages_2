@@ -3,6 +3,106 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*------------EJERCICIO COMPLETO GRID AREAS-----------*/
+#website-areas *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website-areas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera cabecera"
+    "menu menu menu menu menu"
+    "lateral contenido contenido contenido contenido"
+    "pie pie pie pie pie";
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#website-areas #cabecera{
+    grid-area: cabecera;
+
+    /*Centrare il contenuto*/
+    display: flex;
+    /*centra il contenuto horizontalmente*/
+    justify-content: center;
+    /*centra il contenuto verticalmente*/
+    align-items: center;
+
+    background-color: royalblue;
+    color: white;
+}
+
+#website-areas #menu{
+    /*
+    display: flex;
+    align-items: center;
+    */
+    grid-area: menu;
+    line-height: 70px;
+    background: skyblue;
+    color: black;
+}
+
+#website-areas #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 2fr);
+    /*gap: 20px;*/
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#website-areas #contenido{
+    grid-area: contenido;
+    background: #eee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+#website-areas #contenido article{
+    display: flex;
+    align-items: center;/*Vertical*/
+    justify-content: center;/*Horizontal*/
+    background: #ccc;
+    border: 1px solid slateblue;
+}
+
+#website-areas #lateral{
+    grid-area: lateral;
+    background-color: orange;
+    color: white;
+}
+
+#website-areas #footer{
+    grid-area: pie;
+    background: black;
+    color: white;
+}
+
+@media (max-width: 457px){
+    #website-areas {
+        width: 90%;
+    }
+    #website-areas #menu ul{
+        margin-right: 2%;
+    }
+}
+@media (max-width: 386px){
+    #website-areas {
+        width: 100%;
+    }
+}
+
+
 /*------------EJERCICIO COMPLETO-----------*/
 #website *{
     margin: 0px;
@@ -19,7 +119,7 @@ body{
     border: 1px solid #ccc;
 }
 
-#cabecera{
+#website #cabecera{
     /*Centrare il contenuto*/
     display: flex;
     /*centra il contenuto horizontalmente*/
@@ -32,24 +132,27 @@ body{
     grid-column: 1 / 6;
 }
 
-#menu{
+#website #menu{
+    /*
     display: flex;
     align-items: center;
+    */
+    line-height: 70px;
     background: skyblue;
     color: black;
     grid-column: 1 / 6;
 }
 
-#menu ul{
+#website #menu ul{
     display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    gap: 20px;
+    grid-template-columns: repeat(9, 2fr);
+    /*gap: 20px;*/
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-#contenido{
+#website #contenido{
     background: #eee;
     grid-column: 1 / 5;
 
@@ -59,7 +162,7 @@ body{
     padding: 20px;
 }
 
-#contenido article{
+#website #contenido article{
     display: flex;
     align-items: center;/*Vertical*/
     justify-content: center;/*Horizontal*/
@@ -67,13 +170,13 @@ body{
     border: 1px solid slateblue;
 }
 
-#lateral{
+#website #lateral{
     background-color: orange;
     color: white;
     grid-column: 5 / 6;
 }
 
-#footer{
+#website #footer{
     background: black;
     color: white;
     grid-column: 1 / 6;
@@ -83,7 +186,7 @@ body{
     #website{
         width: 90%;
     }
-    #menu ul{
+    #website #menu ul{
         margin-right: 2%;
     }
 }
