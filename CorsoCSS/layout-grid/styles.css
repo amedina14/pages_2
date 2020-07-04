@@ -182,7 +182,112 @@
 }
 
 /* Responsive */
+@media (max-width: 1220px){
+    #header{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    #menu{
+        width: 95%;
+    }
+}
 
+@media (max-width: 784px){
+    #header{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        padding-bottom: 20px;
+    }
+    header h1{
+        text-align: center;
+    }
+
+    #menu{
+        font-size: small;
+        margin: 0px auto;
+    }
+    
+    #content{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        justify-content: space-between;
+        column-gap: auto;
+    }
+    
+    #projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .project{
+        margin: 0px;
+        /*width: 100%;*/
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #aside{
+        margin: 0px;
+    }
+
+    #aside ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer .logo {
+        text-align: center;
+    }
+    #footer .info {
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 498px){
+    #menu a{
+        display: block;
+        padding: 10px;
+    }
+    #aside ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 414px){
+    #aside ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+}
+
+@media (max-width: 334px){
+    #menu ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    #menu a{
+        display: block;
+    }
+}
 
 
 
