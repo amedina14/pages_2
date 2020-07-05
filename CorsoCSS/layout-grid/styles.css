@@ -93,8 +93,10 @@
 }
 
 .project{
+    /*
     margin-bottom: 25px;
     margin-right: 20px;
+    */
     border: 1px solid #ccc;
 }
 
@@ -182,6 +184,22 @@
 }
 
 /* Responsive */
+@media (min-width: 1221px){
+    #projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+        width: 95%;
+    }
+    #aside {
+        margin: 0px 1%;
+        padding: 15px;
+    }
+}
+
 @media (max-width: 1220px){
     #header{
         display: grid;
@@ -192,6 +210,24 @@
     #menu{
         width: 95%;
     }
+    #aside{
+        margin: 0px;
+    }
+    #projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 949px){
+    #aside a{
+        font-size: medium;
+    }
 }
 
 @media (max-width: 784px){
@@ -201,15 +237,22 @@
         align-items: center;
         justify-content: center;
         height: 140px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     header h1{
         text-align: center;
     }
 
+    .logo{
+        margin-left: 0px;
+    }
+
     #menu{
         font-size: small;
         margin: 0px auto;
+    }
+    #menu a{
+        display: block;
     }
     
     #content{
@@ -222,16 +265,17 @@
     
     #projects{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         align-items: center;
         justify-content: center;
     }
     .project{
         margin: 0px;
-        /*width: 100%;*/
+        /*width: 100%;
         margin-left: 10px;
         margin-right: 10px;
+        */
     }
 
     #aside{
@@ -242,6 +286,10 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+    }
+
+    #aside a{
+        font-size: medium;
     }
 
     #footer{
@@ -267,6 +315,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+    #projects {
+        /*display: grid;*/
+        grid-template-columns: 1fr;
     }
 }
 
