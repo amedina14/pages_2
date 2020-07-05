@@ -71,6 +71,7 @@
     color: #444;
     padding: 15px;
     transition: all 300ms;
+    display: block;
 }
 
 #menu a:hover{
@@ -266,15 +267,20 @@
 }
 @media (max-width: 450px){
     #header{
-        height: 189px;
+        height: 190px;
+    }
+    .logo{
+        margin: 0px;
     }
     #menu {
         display: flex;
+        height: 60%;
     }
     #menu ul{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        margin-top: 5px;
     }
     #menu ul li{
         flex-grow: 1;
