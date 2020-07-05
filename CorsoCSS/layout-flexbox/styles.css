@@ -285,4 +285,14 @@
     #menu ul li{
         flex-grow: 1;
     }
+    #menu #contacto{
+        width: 35%;
+        margin: 0px auto;
+    }
+    #footer .logo{
+        margin: 0px;
+    }
+    #footer .info{
+        margin: 0px;
+    }
 }
