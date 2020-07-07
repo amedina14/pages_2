@@ -25,10 +25,9 @@
     height: 250px;
 }
 
-/*div directamente hijos de lateral*/
-.lateral > div{
-    height: 150px;
-    line-height: 150px;
+.lateral > div{ /*div directamente hijos de lateral*/
+    height: calc(250px / 3);
+    line-height: calc(250px / 3);
     text-align: center;
 }
 
