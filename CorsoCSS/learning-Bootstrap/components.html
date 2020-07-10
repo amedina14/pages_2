@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width user-scalable=no /">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Components in Bootstrap 4 with Arandom xiv</title>
 </head>
 
@@ -94,7 +95,55 @@
                     </ol>
                 </nav>
 
-                <div class="alert alert-success fade show">
+                <!--SLIDER-->
+                <div id="slider" class="carousel slide mb-3" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://via.placeholder.com/900x350?text=FIRST" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide</h5>
+                                <p>Practice with slider</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://via.placeholder.com/900x350?text=SECOND" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide</h5>
+                                <p>Practice with slider</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://via.placeholder.com/900x350?text=THIRD" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide</h5>
+                                <p>Practice with slider</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+                <!--END SLIDER-->
+
+                <div class="alert alert-success alert-dismissible fade show">
                     <strong>Success</strong>
                     alert
                     <button type="button" class="close" data-dismiss="alert" aria-lable="close">
@@ -166,12 +215,21 @@
                     <a href="#" class="btn btn-warning">Enter</a>
                 </div>
             </div>
-    
+
         </div>
     </div>
 
     <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".carousel").carousel({
+                interval: 2000
+            });
+        });
+    </script>
+
 </body>
 
 </html>

@@ -41,3 +41,12 @@ footer{
         height: auto;
     }
 }
+
+/* Components.html */
+#slider{
+    height: 350px;
+    overflow: hidden;
+}
+#slider img{
+    height: 350px;
+}
