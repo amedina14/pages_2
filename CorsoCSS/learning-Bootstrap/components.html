@@ -223,6 +223,7 @@
                         0%
                     </div>
                 </div>
+
                 <script>
                     var contador = 0;
                     setInterval(function () {
@@ -232,8 +233,21 @@
                             barra.style.width = contador + '%';
                             barra.innerHTML = contador + '%';
                         }
-                    }, 125)
+                    }, 1000)
                 </script>
+
+                <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom" title="Clic for alert">
+                    Alert
+                </button>
+                <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="right" title="Clic for alert">
+                    Alert 2
+                </button>
+                <button type="button" class="btn-tool btn btn-warning mt-3" data-toggle="tooltip" data-placement="top" title="Clic for alert">
+                    Alert 3
+                </button>
+                <button type="button" class="btn-tool btn btn-success mt-3" data-toggle="tooltip" data-placement="left" title="Clic for alert">
+                    Alert 4
+                </button>
 
             </div>
         </div>
@@ -330,6 +344,7 @@
     </div>
 
     <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="jquery/popper.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
     <script>
@@ -337,6 +352,8 @@
             $(".carousel").carousel({
                 interval: 2000
             });
+
+            $(".btn-tool").tooltip();
         });
     </script>
 
