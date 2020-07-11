@@ -84,7 +84,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="#">Inicio</a>
+                            <a href="#">Start</a>
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#">Web Development</a>
@@ -213,9 +213,27 @@
                         Display information
                     </a>
                     <div class="collapse" id="information">
-                        <div class="card card-body bg-dark text-light mt-2">This is the arandom information hidden</div>
+                        <div class="card card-body bg-dark text-light mt-2">This is the arandom hidden information</div>
                     </div>
                 </div>
+
+                <!-- PROGRESS BAR -->
+                <div class="progress mt-5">
+                    <div id="barra-progreso" class="progress-bar bg-success w-0" role="progressbar">
+                        0%
+                    </div>
+                </div>
+                <script>
+                    var contador = 0;
+                    setInterval(function () {
+                        if (contador < 100) {
+                            contador++;
+                            var barra = document.querySelector("#barra-progreso");
+                            barra.style.width = contador + '%';
+                            barra.innerHTML = contador + '%';
+                        }
+                    }, 125)
+                </script>
 
             </div>
         </div>
