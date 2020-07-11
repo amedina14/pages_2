@@ -236,16 +236,17 @@
                     }, 1000)
                 </script>
 
-                <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom" title="Clic for alert">
+                <!--TOOLTIP-->
+                <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="left" title="Clic for alert">
                     Alert
                 </button>
-                <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="right" title="Clic for alert">
+                <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="top" title="Clic for alert">
                     Alert 2
                 </button>
-                <button type="button" class="btn-tool btn btn-warning mt-3" data-toggle="tooltip" data-placement="top" title="Clic for alert">
+                <button type="button" class="btn-tool btn btn-warning mt-3" data-toggle="tooltip" data-placement="bottom" title="Clic for alert">
                     Alert 3
                 </button>
-                <button type="button" class="btn-tool btn btn-success mt-3" data-toggle="tooltip" data-placement="left" title="Clic for alert">
+                <button type="button" class="btn-pop btn btn-success mt-3" data-toggle="popover" data-container="body" data-placement="right" title="PopOver" data-content="This is a popover">
                     Alert 4
                 </button>
 
@@ -354,6 +355,8 @@
             });
 
             $(".btn-tool").tooltip();
+
+            $(".btn-pop").popover();
         });
     </script>
 
